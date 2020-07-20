@@ -1,36 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package arreglos;
 import java.util.Scanner;
-/**
- *
- * @author JEREMY
- */
+
 public class Prog106 {
-    public static void main(String[] args){
- 
-        Scanner sc = new Scanner(System.in);
-        int numero,fibo1,fibo2,i;
-  
-        do{
-            System.out.print("Introduce numero mayor que 1: ");
-            numero = sc.nextInt();
-        }while(numero<=1);
-  
-        System.out.println("Los " + numero + " primeros términos de la serie de Fibonacci son:");                 
-
-        fibo1=1;
-        fibo2=1;
-
-        System.out.print(fibo1 + " ");
-        for(i=2;i<=numero;i++){
-            System.out.print(fibo2 + " ");
-            fibo2 = fibo1 + fibo2;
-            fibo1 = fibo2 - fibo1;
+   public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int x = 0, y = 1, z, numero;
+       
+        System.out.print("Ingrese cantidad de elementos para la serie: ");
+        numero = teclado.nextInt();
+       
+        for (int i = 0; i < numero; i++) {
+            System.out.println("fibonacci:"+x);
+            z = x + y;
+            x = y;
+            y = z;
         }
-        System.out.println();
     }
+         
 }
