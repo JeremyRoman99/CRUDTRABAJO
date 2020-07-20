@@ -11,7 +11,7 @@ public class Prog106 {
         numero = teclado.nextInt();
        
         for (int i = 0; i < numero; i++) {
-            System.out.println("fibonacci:"+x);
+            System.out.println("fibonacci:"+x );
             z = x + y;
             x = y;
             y = z;
