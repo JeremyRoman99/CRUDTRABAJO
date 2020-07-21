@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class Prog001 {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
         int numero;
+        Scanner teclado = new Scanner(System.in);
         System.out.print("Numero: ");
         numero = Integer.valueOf(teclado.nextLine());
         if (numero % 2 == 0){
